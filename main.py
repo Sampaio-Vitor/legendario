@@ -66,7 +66,6 @@ def add_subtitles_to_video(video_path, srt_path):
     video_with_subtitles.write_videofile('output_with_subtitles.mp4')
 
 def main(video_url):
-    # Extrair bucket e key do URL do S3
     bucket_name = 'videobucketlegendario'
     video_key = video_url.split('/')[-1]
     video_path = video_key
