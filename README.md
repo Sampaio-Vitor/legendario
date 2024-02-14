@@ -2,6 +2,10 @@
 
 Este projeto automatiza a adição de legendas a vídeos utilizando serviços da AWS. A automação é desencadeada pelo upload de um vídeo para um bucket do S3, que aciona uma função Lambda. Esta função, então, inicia um container Docker hospedado no Amazon ECR (Elastic Container Registry) executado pelo AWS Fargate para processar o vídeo.
 
+Demonstração de um video legendado utilizando a ferramenta aqui:
+
+https://youtu.be/YiWHUY-Rqsg
+
 # Aplicação
 
 Este projeto pode ser integrado a uma interface de usuário, proporcionando uma experiência onde os usuários fazem upload de seus vídeos e, automaticamente, recebem os vídeos legendados. Essa integração requer um front-end que permita aos usuários selecionar e enviar vídeos para o bucket do S3 designado. Após o upload, o processo automatizado é iniciado, e o vídeo processado com legendas é disponibilizado para o usuário. Esta abordagem simplifica significativamente a adição de legendas a vídeos, tornando-a acessível a uma ampla gama de usuários, desde criadores de conteúdo até empresas que buscam tornar seus vídeos mais inclusivos e acessíveis.
