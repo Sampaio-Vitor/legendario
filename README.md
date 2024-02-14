@@ -1,4 +1,4 @@
-# 📽 Projeto de Legendagem Automática de Vídeos com AWS 📽
+# 📽 Projeto de Legendas Automáticas de Vídeos com AWS 📽
 
 Este projeto automatiza a adição de legendas a vídeos utilizando serviços da AWS. A automação é desencadeada pelo upload de um vídeo para um bucket do S3, que aciona uma função Lambda. Esta função, então, inicia um container Docker hospedado no Amazon ECR (Elastic Container Registry) executado pelo AWS Fargate para processar o vídeo.
 
@@ -12,6 +12,9 @@ Este projeto pode ser integrado a uma interface de usuário, proporcionando uma 
 - **Lambda Function**: Detecta uploads de novos vídeos e aciona o processamento.
 - **Elastic Container Registry (ECR)**: Armazena a imagem do Docker usada para adicionar legendas aos vídeos.
 - **Fargate**: Executa a imagem do Docker sem necessidade de gerenciar servidores ou clusters.
+
+![WhatsApp Image 2024-02-14 at 16 10 58](https://github.com/Sampaio-Vitor/legendario/assets/110466124/e58d5923-ba02-4fb7-8978-28008b3b67e9)
+
 
 ## Pré-requisitos
 
